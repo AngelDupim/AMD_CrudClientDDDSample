@@ -6,4 +6,13 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Flunt" Version="1.0.5" />
+    <PackageReference Include="MongoDB.Bson" Version="2.19.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AMD_CrudClientDDDSample.Infrastructure.Shared\AMD_CrudClientDDDSample.Infrastructure.Shared.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -3,9 +3,76 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 - Application", "02 - Application", "{21DD2B7B-1CEE-44C8-A6B0-2F9390454704}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 - Services", "01 - Services", "{2C194BFF-484C-4898-AFA2-2730852C427D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 - Domain", "03 - Domain", "{36970EC2-5F78-442C-B3B2-CA488427E502}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04- Infrastructure", "04- Infrastructure", "{7FC99BAA-DD09-48EA-8617-8D332114ACB7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{4E3D363A-77AF-4609-B32F-E3344DB7F0EC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AMD_CrudClientDDDSample.Domain", "AMD_CrudClientDDDSample.Domain\AMD_CrudClientDDDSample.Domain.csproj", "{99A21ADE-2C71-4DE8-B828-E79E7D33DB61}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AMD_CrudClientDDDSample.Infrastructure.Data", "AMD_CrudClientDDDSample.Infrastructure.Data\AMD_CrudClientDDDSample.Infrastructure.Data.csproj", "{15EA3124-3011-4B31-87D1-E5C018F08EC2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AMD_CrudClientDDDSample.Infrastructure.IoC", "AMD_CrudClientDDDSample.Infrastructure.IoC\AMD_CrudClientDDDSample.Infrastructure.IoC.csproj", "{3DD8A17E-23BB-40A8-9822-2B4070A131FC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AMD_CrudClientDDDSample.Infrastructure.Shared", "AMD_CrudClientDDDSample.Infrastructure.Shared\AMD_CrudClientDDDSample.Infrastructure.Shared.csproj", "{502564A1-78F1-4AAE-AFB6-E77983D9F57A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AMD_CrudClientDDDSample.Test", "AMD_CrudClientDDDSample.Test\AMD_CrudClientDDDSample.Test.csproj", "{CE5B0872-394A-4417-A580-6CEF4ED6F88A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AMD_CrudClientDDDSample.Services", "AMD_CrudClientDDDSample.Services\AMD_CrudClientDDDSample.Services.csproj", "{675578E4-12D5-4FDD-822C-91D7A69C8C00}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AMD_CrudClientDDDSample.Application", "AMD_CrudClientDDDSample.Application\AMD_CrudClientDDDSample.Application.csproj", "{B34F8E7F-A7E2-40A9-B485-89154B04FCEF}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{99A21ADE-2C71-4DE8-B828-E79E7D33DB61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99A21ADE-2C71-4DE8-B828-E79E7D33DB61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99A21ADE-2C71-4DE8-B828-E79E7D33DB61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99A21ADE-2C71-4DE8-B828-E79E7D33DB61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15EA3124-3011-4B31-87D1-E5C018F08EC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15EA3124-3011-4B31-87D1-E5C018F08EC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15EA3124-3011-4B31-87D1-E5C018F08EC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15EA3124-3011-4B31-87D1-E5C018F08EC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DD8A17E-23BB-40A8-9822-2B4070A131FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DD8A17E-23BB-40A8-9822-2B4070A131FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DD8A17E-23BB-40A8-9822-2B4070A131FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DD8A17E-23BB-40A8-9822-2B4070A131FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{502564A1-78F1-4AAE-AFB6-E77983D9F57A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{502564A1-78F1-4AAE-AFB6-E77983D9F57A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{502564A1-78F1-4AAE-AFB6-E77983D9F57A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{502564A1-78F1-4AAE-AFB6-E77983D9F57A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE5B0872-394A-4417-A580-6CEF4ED6F88A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE5B0872-394A-4417-A580-6CEF4ED6F88A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE5B0872-394A-4417-A580-6CEF4ED6F88A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE5B0872-394A-4417-A580-6CEF4ED6F88A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{675578E4-12D5-4FDD-822C-91D7A69C8C00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{675578E4-12D5-4FDD-822C-91D7A69C8C00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{675578E4-12D5-4FDD-822C-91D7A69C8C00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{675578E4-12D5-4FDD-822C-91D7A69C8C00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B34F8E7F-A7E2-40A9-B485-89154B04FCEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B34F8E7F-A7E2-40A9-B485-89154B04FCEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B34F8E7F-A7E2-40A9-B485-89154B04FCEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B34F8E7F-A7E2-40A9-B485-89154B04FCEF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{99A21ADE-2C71-4DE8-B828-E79E7D33DB61} = {36970EC2-5F78-442C-B3B2-CA488427E502}
+		{15EA3124-3011-4B31-87D1-E5C018F08EC2} = {7FC99BAA-DD09-48EA-8617-8D332114ACB7}
+		{3DD8A17E-23BB-40A8-9822-2B4070A131FC} = {7FC99BAA-DD09-48EA-8617-8D332114ACB7}
+		{502564A1-78F1-4AAE-AFB6-E77983D9F57A} = {7FC99BAA-DD09-48EA-8617-8D332114ACB7}
+		{CE5B0872-394A-4417-A580-6CEF4ED6F88A} = {4E3D363A-77AF-4609-B32F-E3344DB7F0EC}
+		{675578E4-12D5-4FDD-822C-91D7A69C8C00} = {2C194BFF-484C-4898-AFA2-2730852C427D}
+		{B34F8E7F-A7E2-40A9-B485-89154B04FCEF} = {21DD2B7B-1CEE-44C8-A6B0-2F9390454704}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0EFF9BF7-84C6-472D-9D4C-DF0D8C63B473}
