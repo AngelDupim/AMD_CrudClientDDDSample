@@ -75,8 +75,8 @@ db.User.insertOne({"_id": "69f2cd42-b6a4-418f-a4c2-ece3d719ed6f", "Name":"Admin"
 👉 Abra o projeto no Visual Studio 2022
 
 ⚠️ Abra o arquivo appsettings.Development.json dentro do projeto AMD_CrudClientDDDSample.Services :
-❗Comente o trecho "Connection": "mongodb://mongoDB:27017" 
-❗Descomente o trecho "Connection": "mongodb://localhost:27017"
+<p>❗Comente o trecho "Connection": "mongodb://mongoDB:27017" </p>
+<p>❗Descomente o trecho "Connection": "mongodb://localhost:27017"</p>
 
 ➡️Abra o Package Manager Console : View -> Other windows -> Package Manager Console
 
@@ -118,8 +118,8 @@ dotnet test
 ## Publicar no Docker
 
 ⚠️Abra o arquivo appsettings.Development.json dentro do projeto AMD_CrudClientDDDSample.Services:
-❗ Comente o trecho "Connection": "mongodb://localhost:27017"
-❗ Descomente o trecho "Connection": "mongodb://mongoDB:27017" 
+<p>❗ Comente o trecho "Connection": "mongodb://localhost:27017" </p>
+<p>❗ Descomente o trecho "Connection": "mongodb://mongoDB:27017" </p>
 
 👉 No cmd 
 ```bash
